@@ -148,11 +148,7 @@ Happy writing!`)
             'utf8'
           )
         ),
-    ]).then(() =>
-      exec(`git add . && git commit -m "first commit :tada:"`, {
-        cwd: withOutputPath(profile),
-      })
-    )
+    ]).then(() => {})
   })
   .then(() => {
     spinner.succeed('Updated the project to use the repository URL')
