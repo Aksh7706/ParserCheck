@@ -149,12 +149,9 @@ Happy writing!`)
           )
         ),
     ]).then(() =>
-      exec(
-        `git init && git remote add origin ${remoteURL} && git add . && git commit -m "first commit :tada:"`,
-        {
-          cwd: withOutputPath(profile),
-        }
-      )
+      exec(`git add . && git commit -m "first commit :tada:"`, {
+        cwd: withOutputPath(profile),
+      })
     )
   })
   .then(() => {
